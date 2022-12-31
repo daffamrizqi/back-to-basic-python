@@ -1,0 +1,8 @@
+What can super() do for you?:
+- Allows you to call methods of the superclass in your subclass
+- The primary use case of this is to extends the functionality of the
+  inherited methods
+- In the next example, you will create a class cube that inherits from square
+  and extends the functionality of .area() (inherited from the Rectangle class 
+  through Square) to calculate the surface area and volume of a Cube instance
+
