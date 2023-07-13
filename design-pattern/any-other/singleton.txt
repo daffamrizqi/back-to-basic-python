@@ -1,0 +1,43 @@
+############
+SINGLETON ##
+############
+
+- Is a CREATIONAL DESIGN PATTERN that lets you ensure that a class has only one instance,
+  while providing a global access point to this instance
+
+
+===== PROBLEM =====
+Singleton solves 2 problems at the same time, violating the SINGLE RESPONSIBILOTY PRINCIPLE
+
+1. ENSURE THAT A CLASS HAS JUST A SINGLE INSTANCE.
+   - The most common reason for this is to control access to some shared resource - for example, a database or a File
+   - HOW IT WORKS:
+     Imagine that you created an object, but after a while decided to create a new one. Instead of receiving
+     a fresh object, youll get the one you already created
+   - NOTE: that this behavior is imposible to implement with a regular constructor since a constructor call MUST always
+     return a new object by design
+
+2. PROVIDE A GLOBAL ACCESS POINT TO THAT INSTANCE:
+   - Remember those global variables used to store some essentials object?
+   - While they're very handy, it also versy unsafe since any code can potentially
+     overwrite the contens of this variables and crash the app
+   - Just like GLOBAL VARIABLE, the singleton lets you access some object from anywhere
+     in the program
+   - However, it also protects that instance from being overwritten by other code
+
+
+==== SOLUTIONS =====
+All implementations of the singleton have these two steps in common:
+- Make the default constructor private, to prevent other objects from using the new
+  operator with the Singleton CLASS
+- Create a static creation method that acts as a constructor. Under the hood, this method
+  calls the private consstuctor to create an object and saves it in a static field
+- All following calls to this method returns the cached object
+
+
+==== REAL WORLD ANALOGY ====
+- A country can have only one official government Regardless of the personnal identities
+  of the individuals who form governments, the title, "The gov X", is a global point
+  of access that identifies the group of people in charge
+
+

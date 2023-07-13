@@ -1,0 +1,37 @@
+- Design pattern is a technique used by devs to solve the commonnly occuring software desgin
+- It is a predefined pattern to solve a recurring problem in the code
+
+###########################################
+DIFFERENCE STATICMETHOD and CLASS METHOD ##
+###########################################
+
+- Adalah sebuah fungsi atau method pada sebuah kelas yang bersifat STATIS
+- Statis berarti kita bisa memanggil fungsi tsb secara langsug tanpa harus membuat INSTANCE
+  dari kelas yang bersangkutan
+- Dan juga staticmethod hanya memiliki informasi sebatas dari parameter yang ia terima, ia tidak akan
+  memiliki informasi tambahan tentang kelas apa yang dia ada di dalamnya (berbeda dengan classmethod)
+  
+
+
+
+############
+SINGLETON ##
+############
+
+- It is a way to provide ONE OBJECT of a particular type
+- It is used to describe the formation of A SINGLE INSTANCE OF A CLASS while offering a single global 
+  access point o the OBJECT
+- It PREVENTS the creation of the single CLASS
+- The newlu created object will be shared globally in an application
+
+
+=== MOTIVATION === 
+- Singleton are specially used in an applucation types that need mechanism over access to a mutual resource
+- A sigle class can be used to define a single INSTANCE
+- The benefits off using singleton is that we can restrict the shared resource and maintain INTEGRITY
+- It also PREVENTS the overwriting inn the current code by the other classes ensuing incompetent code
+
+
+=== IMPLEMENTATION ===
+- To implement the singleton pattern, we use the static method
+- We create the getInstance() method that can return the shared resources
