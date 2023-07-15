@@ -41,3 +41,12 @@ All implementations of the singleton have these two steps in common:
   of access that identifies the group of people in charge
 
 
+==== Applicability ====
+- Use the singleton pattern when a class in your program should have Just
+  a single instance available to all clients for example, a single database
+  object shared by different parts of the program
+- The singleton pattern disables all other means of creating objects of a class
+  except for the special creation method. This method either creates a new object
+  or returns an existing one if it has already been created
+- Use singleton pattern when you need stricter control over global variables
+

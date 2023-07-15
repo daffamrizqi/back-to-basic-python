@@ -1,3 +1,6 @@
+"""
+METHOD 1
+"""
 class GovSingleton:
     __instance__ = None
 
@@ -37,4 +40,11 @@ EXPLANATION:
   it will raise an exception
 - We have then defined the static method named get_instance(),, which returns the existing instance
   ;  if it is not availabe, then create it and return
+"""
+
+
+
+
+"""
+METHOD 2: Doubled check Locking Singleton Design Pattern
 """
